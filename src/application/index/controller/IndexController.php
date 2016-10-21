@@ -4,7 +4,7 @@ namespace app\index\controller;
 use think\Controller;
 use think\Db;
 
-class Index extends Controller
+class IndexController extends Controller
 {
     
     /*
@@ -12,6 +12,7 @@ class Index extends Controller
      */
     public function index($name = 'thinkphp_index')
     {
+        halt([1,2,3,4]);
         $this->assign('name', $name);
         return $this->fetch();
     }
@@ -230,6 +231,7 @@ class Index extends Controller
         //把所有城市的操作解析到city方法
         return json(['data'=>$name,'code'=>1,'message'=>'操作完成']);
     }
+    
     
     
     

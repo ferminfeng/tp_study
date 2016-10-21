@@ -47,5 +47,5 @@ return [
     // 是否自动写入时间戳字段
     'auto_timestamp' => false,
     // 是否需要进行SQL性能分析
-    'sql_explain'    => false,
+    'sql_explain'    => true,
 ];

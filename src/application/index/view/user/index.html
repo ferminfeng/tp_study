@@ -1,0 +1,12 @@
+
+{layout name="user/layout" /}
+<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" />
+<h2>用户列表（ {$list->total()}） </h2>
+{volist name="list" id="user"}
+ID：{$user.id}<br/>
+昵称：{$user.nickname}<br/>
+邮箱：{$user.email}<br/>
+生日：{$user.birthday}<br/>
+------------------------<br/>
+{/volist}
+{$list->render()}

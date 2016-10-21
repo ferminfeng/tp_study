@@ -1,0 +1,4 @@
+[ 2016-10-21T18:10:00+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/v1/user/10
+[ error ] [1]Class 'Route' not found[E:\fyflzjz_github\tp_study\src\application\route.php:12]
+
+---------------------------------------------------------------
