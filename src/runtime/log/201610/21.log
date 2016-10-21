@@ -6351,3 +6351,41 @@
 [ info ] [ LOG ] INIT File
 
 ---------------------------------------------------------------
+[ 2016-10-21T21:17:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ log ] www.tp_study.com/index.php [运行时间：0.022918s][吞吐率：43.63req/s] [内存消耗：2,251.50kb] [文件加载：47]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp_study.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=6982943744; think_var=zh-cn; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ /Users/fermin/fyflzjz_github/tp_study/src/application/index/controller/IndexController.php 13 - 18
+
+  - Parameters [1] {
+    Parameter #0 [ <optional> $name = 'thinkphp_index' ]
+  }
+}
+
+[ info ] [ VIEW ] /Users/fermin/fyflzjz_github/tp_study/src/public/../application/index/view/index/index.html [ array (
+  0 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

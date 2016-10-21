@@ -1,5 +1,5 @@
 <?php
-namespace app\index\controller;
+namespace app\api\controller;
 
 use think\Controller;
 use think\Db;
@@ -12,7 +12,7 @@ class IndexController extends Controller
      */
     public function index($name = 'thinkphp_index')
     {
-        //halt([1,2,3,4]);
+        halt([1,2,3,4]);
         $this->assign('name', $name);
         return $this->fetch();
     }
