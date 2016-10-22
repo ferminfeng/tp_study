@@ -9,29 +9,20 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-//Route::rule(':version/user/:id','api/:version.User/read');
+
+//设置后访问 index.php/index/index/hello/name/aa 后只能使用  index.php/hello 来访问,加中括号则说明name参数可选
+//方法一
+//use think\Route;
+//Route::rule('hello/[:name]','index/index/hello');
+
+//方法二
 return [
-    '__pattern__' => [
-        'name' => '\w+',
-    ],
-    '[hello]'     => [
-        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-        ':name' => ['index/hello', ['method' => 'post']],
-    ],
-	':version/user/:id' =>'api/:version.User/read'
+    //添加路由规则 路由到index控制器的hello方法   
+    'hello/[:name]' => 'index/index/hello',
+    
+    //闭包函数,其实就是直接执行后面function内的代码,是为某些特殊的场景定义路由规则
+    'hellotwo/[:name]' => function($name){
+        return "nihao,". $name . '1';
+    },
 
 ];
-
-//    return [
-//        // 全局变量规则定义
-//        '__pattern__' => [
-//            'id' => '\d+',
-//        ],
-//        'user/index' => 'index/user/index',
-//        'user/create' => 'index/user/create',
-//        'user/add' => 'index/user/add',
-//        'user/add_list' => 'index/user/addList',
-//        'user/update/:id' => 'index/user/update',
-//        'user/delete/:id' => 'index/user/delete',
-//        'user/:id' => 'index/user/read',
-//    ];

@@ -13,7 +13,7 @@ class IndexController extends Controller
     public function index($name = 'thinkphp_index')
     {
         //halt([1,2,3,4]);
-        $this->assign('name', $name);
+        $this->assign('name', $name.'to index');
         return $this->fetch();
     }
     
@@ -22,7 +22,7 @@ class IndexController extends Controller
      */
     public function hello($name = 'thinkphp_hello')
     {
-        $this->assign('name', $name);
+        $this->assign('name', $name.'  to hello');
         return $this->fetch();
     }
     
